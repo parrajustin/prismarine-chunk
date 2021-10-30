@@ -6,7 +6,7 @@ export = loader;
 declare function loader(mcVersion: number): typeof Chunk;
 
 declare class Chunk {
-    constructor(initData: ChunkInitData | null)
+    constructor(initData: any | null)
     static fromJson(j: any): Chunk;
     skyLightSent: boolean;
     sections: Section[];
